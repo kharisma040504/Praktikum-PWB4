@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Information Recorder</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Dataset Information Recorder</h2>
+        <form id="datasetForm">
+            <label for="datasetName">Nama Dataset:</label>
+            <input type="text" id="datasetName" name="datasetName" required>
+
+            <label for="creator">Pembuat Dataset:</label>
+            <input type="text" id="creator" name="creator" required>
+
+            <label for="verifier">Verifikator Dataset:</label>
+            <input type="text" id="verifier" name="verifier" required>
+
+            <label for="recordCount">Jumlah Records:</label>
+            <input type="number" id="recordCount" name="recordCount" required>
+
+            <label for="attributeCount">Jumlah Attribute Data:</label>
+            <input type="number" id="attributeCount" name="attributeCount" required>
+
+            <label for="sourceDescription">Deskripsi Sumber Data:</label>
+            <textarea id="sourceDescription" name="sourceDescription" required></textarea>
+
+            <label for="startDate">Tanggal Mulai Dibuat:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">Tanggal Selesai Dibuat:</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <label for="completionStatus">Status Penyelesaian:</label>
+            <select id="completionStatus" name="completionStatus" required>
+                <option value="Selesai">Selesai</option>
+                <option value="Berlangsung">Berlangsung</option>
+                <option value="Gagal">Gagal</option>
+            </select>
+
+            <label for="completionNote">Catatan Akhir:</label>
+            <textarea id="completionNote" name="completionNote"></textarea>
+
+            <button type="submit">Simpan Informasi</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
